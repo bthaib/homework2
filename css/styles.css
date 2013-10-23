@@ -1,21 +1,45 @@
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
 
 
 
 body {
 	background-image:url(../img/bg.png); 
 	background-repeat: repeat;
+	font-family: 'Droid Sans', sans-serif;
 	font-size: 18px;
 	margin-top: 125px; 
 }
 
-h3 {
-	clear: both;
-}
 
 footer {
 	background-color: #000;
-	margin-top: 10px;
+	margin: 10px;
+}
+
+.menu-items {
+	clear: both;
+}
+
+.misc-items {
+	clear: both;
+}
+
+
+.food-definition {
+	padding-bottom: 12px;
+	font-size: 85%;
+}
+
+.menu-heading {
+	color: #3F1671;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+ 
+.tags {
+	font-size: 15%;
 }
 
 .nav {
@@ -50,13 +74,19 @@ footer {
 	text-transform: uppercase;
 }
 
-.icon {
-	float: left;
-	padding-bottom: 5px;
+span.glyphicon-envelope {
+    font-size: 1.6em;
+    padding-right: 5px;
 }
 
 .row {
 	margin-bottom: 10px;
+}
+
+.alert {
+	font-size: 90%;
+	letter-spacing: 2px;
+	text-align: center;
 }
 
 .copyright {
@@ -67,3 +97,30 @@ footer {
 	text-decoration: uppercase;
 	text-align: center;
 }
+
+.size-list {
+	list-style: none;
+	font-size: 85%;
+}
+
+.slogan {
+	letter-spacing: 0.5px;
+}
+
+.col-icon {
+	float: left;
+	width: 50px;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+.tags {
+	font-size: 10%;
+}
+
+}
+
+
+

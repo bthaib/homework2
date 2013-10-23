@@ -1,9 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 
-
-
-
 body {
 	background-image:url(../img/bg.png); 
 	background-repeat: repeat;
@@ -12,6 +9,10 @@ body {
 	margin-top: 125px; 
 }
 
+:focus {
+	outline: #F00 dotted 2px;
+	background-color: #FFF700;
+}
 
 footer {
 	background-color: #000;
@@ -37,6 +38,10 @@ footer {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
+
+.heading {
+	color: #3F1671;
+}
  
 .tags {
 	font-size: 15%;
@@ -47,9 +52,9 @@ footer {
 }
 
 .navbar-nav {
-	text-transform: uppercase;
-	letter-spacing: 3px;
 	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
 }
 
 .img-responsive {
@@ -60,7 +65,7 @@ footer {
 .page-header {
 	color: #3F1671;
 	font-family: 'Playfair Display', serif;
-	font-size: 480%;
+	font-size: 460%;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: normal;
@@ -94,13 +99,12 @@ span.glyphicon-envelope {
 	font-size: 65%;
 	letter-spacing: 2px;
 	padding: 8px;
-	text-decoration: uppercase;
 	text-align: center;
 }
 
 .size-list {
-	list-style: none;
 	font-size: 85%;
+	list-style: none;
 }
 
 .slogan {
@@ -109,15 +113,56 @@ span.glyphicon-envelope {
 
 .col-icon {
 	float: left;
-	width: 50px;
 	margin-right: 1em;
 	margin-bottom: 1em;
+	width: 50px;
+}
+
+.paragraph {
+	clear: both;
+	padding-bottom: 5px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
 .tags {
 	font-size: 10%;
+}
+
+.page-header {
+	color: #3F1671;
+	font-family: 'Playfair Display', serif;
+	font-size: 350%;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: normal;
+}
+
+.paragraph {
+	clear: both;
+	font-size: 95%;
+	padding-bottom: 5px;
+}
+
+.heading {
+	color: #3F1671;
+	font-size: 150%;
+}
+
+.copyright {
+	color: #FFF;
+	font-size: 50%;
+	letter-spacing: 2px;
+	padding: 8px;
+	text-align: center;
+}
+
+.info {
+	font-size: 60%;
+	font-weight: 700;
+	padding-bottom: 8px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 }
